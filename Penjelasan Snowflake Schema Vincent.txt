@@ -1,0 +1,14 @@
+Penjelasan Snowflake Schema Storepedia.io:
+
+1. Kebutuhan terhadap jumlah transaksi pada tiap product per bulannya.
+Data ini dapat diambil di fact_transaction, di mana terdapat data product_id dan time_id,
+jumlah transaksinya dapat di count.
+
+2. Kebutuhan terhadap data lengkap user
+Data ini dapat diambil di dim_user, lengkap dengan semua detail data user yang ada.
+
+3. Kebutuhan terhadap list of product
+Data ini dapat diambil di dim_product, lengkap dengan semua detail data product yang ada.
+
+4. Kebutuhan terhadap dari mana user-user yang membeli produk ini berasal.
+Data ini dapat diambil di fact_transaction, di mana terdapat data product_id, user_id.
